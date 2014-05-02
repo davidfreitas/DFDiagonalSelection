@@ -4,7 +4,7 @@
 DiagonalSelection is inspired by the amazing [VICE VERSA] concept by Michel Oh.
 
 #### Examples
-![](ExampleImages/gender.gif) . ![](ExampleImages/phone.gif) . ![](ExampleImages/phone2.gif)
+![](ExampleImages/gender.gif) . ![](ExampleImages/phone.gif)
 
 ## Usage
 
