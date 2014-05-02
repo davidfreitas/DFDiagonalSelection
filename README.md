@@ -1,30 +1,22 @@
 ## DiagonalSelection
 
 [VICE VERSA]: https://www.behance.net/gallery/VICE-VERSA-diagonal-UI-optimized-for-single-hand-IX/12419409
-DiagonalSelection is inspired on the amazing [VICE VERSA] concept by Michel Oh.
+DiagonalSelection is inspired by the amazing [VICE VERSA] concept by Michel Oh.
 
-![](ExampleImages/gender.gif)
-
-![](ExampleImages/phone.gif)
+#### Examples
+![](ExampleImages/gender.gif) . ![](ExampleImages/phone.gif) . ![](ExampleImages/phone2.gif)
 
 ## Usage
 
 To use it, add DFDiagonalSelection.h and DFDiagonalSelection.m files to your project.
 
-Initializing and adding the DiagonalSelection to the screen
-
+#### Initializing and adding the DiagonalSelection to the screen
 ```objective-c
 DFDiagonalSelection *diagonalSelection = [[DFDiagonalSelection alloc] initWithFrame:frame LeftImage:leftImage RightImage:rightImage];
 [self.view addSubview:diagonalSelection];
 ```
 
-When the user manipulates the switch control ("flips" it) a `UIControlEventValueChanged` event is generated.
-
-```objective-c
-[mySwitch addTarget:self action:@selector(switchChanged:) forControlEvents:UIControlEventValueChanged];
-```
-
-You can set images for the left and right sides of the selector.
+You can set images for the left and right sides of the selector.  
 Keep in mind that, to get the expected effect, it's best to have two full images that can be equally sliced in half.
 
 ```objective-c
@@ -36,6 +28,10 @@ diagonalSelection.rightImage = [UIImage imageNamed:@"galaxy"];
 
 * iOS 6.0
 * ARC
+
+## TODO
+
+* Implement method for switching to left handed mode.
 
 ## License
 
