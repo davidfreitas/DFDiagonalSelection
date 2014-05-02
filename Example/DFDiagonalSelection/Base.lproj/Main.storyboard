@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="QX5-rU-Eg0">
+    <dependencies>
+        <deployment defaultVersion="1552" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--Gender View Controller - Gender-->
+        <scene sceneID="wPf-Kj-Y14">
+            <objects>
+                <viewController id="0tC-Kx-WwG" customClass="GenderViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yVs-cn-cqn"/>
+                        <viewControllerLayoutGuide type="bottom" id="A3l-w9-2iY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hwb-WR-Xpp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.4549019608" green="0.35686274509999999" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Gender" id="KaK-Pq-l9M"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <size key="freeformSize" width="320" height="568"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bFb-co-3Gf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="686" y="-424"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yNf-8P-4KT">
+            <objects>
+                <tabBarController definesPresentationContext="YES" id="QX5-rU-Eg0" sceneMemberID="viewController">
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" barStyle="black" id="keb-dR-IXG">
+                        <rect key="frame" x="129" y="330" width="163" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="0tC-Kx-WwG" kind="relationship" relationship="viewControllers" id="d35-6i-87g"/>
+                        <segue destination="PYV-GS-sd2" kind="relationship" relationship="viewControllers" id="f1R-Tw-M8w"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6mm-1m-3uK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="152" y="-98"/>
+        </scene>
+        <!--Phone View Controller - Phone-->
+        <scene sceneID="FDZ-pd-A1O">
+            <objects>
+                <viewController id="PYV-GS-sd2" customClass="PhoneViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QKW-Qg-c1e"/>
+                        <viewControllerLayoutGuide type="bottom" id="ErR-nG-5hZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Vi7-wE-HtH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Phone" id="tPj-qD-Qed"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pzZ-je-f4V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="686" y="228"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
