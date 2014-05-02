@@ -8,15 +8,20 @@ DiagonalSelection is inspired by the amazing [VICE VERSA] concept by Michel Oh.
 
 ## Usage
 
-To use it, add DFDiagonalSelection.h and DFDiagonalSelection.m files to your project.
+To use it, simply add DFDiagonalSelection.h and DFDiagonalSelection.m files to your project.
 
-#### Initializing and adding the DiagonalSelection to the screen
+#### Initializing and adding the DFDiagonalSelection to the screen
+
+The DFDialogSelection can be of any size and be used as a subview of any `UIView` subclass.
+
+Use the `- (id)initWithFrame:(CGRect)frame LeftImage:(UIImage *)leftImage RightImage:(UIImage *)rightImage` method to create a DFDiagonalSelection passing it's frame and images.
+
 ```objective-c
 DFDiagonalSelection *diagonalSelection = [[DFDiagonalSelection alloc] initWithFrame:frame LeftImage:leftImage RightImage:rightImage];
 [self.view addSubview:diagonalSelection];
 ```
 
-You can set images for the left and right sides of the selector.  
+You can set images for both left and right sides of the selector.  
 Keep in mind that, to get the expected effect, it's best to have two full images that can be equally sliced in half.
 
 ```objective-c
