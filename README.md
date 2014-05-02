@@ -1,14 +1,14 @@
-## DiagonalSelection
+## DFDiagonalSelection
 
 [VICE VERSA]: https://www.behance.net/gallery/VICE-VERSA-diagonal-UI-optimized-for-single-hand-IX/12419409
-DiagonalSelection is inspired by the amazing [VICE VERSA] concept by Michel Oh.
+DFDiagonalSelection is inspired by the amazing [VICE VERSA] concept by Michel Oh.
 
 #### Examples
 ![](ExampleImages/gender.gif) . ![](ExampleImages/phone.gif)
 
 ## Usage
 
-To use it, simply add DFDiagonalSelection.h and DFDiagonalSelection.m files to your project.
+To use it, simply add `DFDiagonalSelection.h` and `DFDiagonalSelection.m` files to your project.
 
 #### Initializing and adding the DFDiagonalSelection to the screen
 
